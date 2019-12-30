@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rush.com.webkit">
+
+    <application>
+        <activity
+            android:name=".WebViewActivity"
+            android:hardwareAccelerated="true"
+            android:process=":remoteWeb" />
+    </application>
+</manifest>

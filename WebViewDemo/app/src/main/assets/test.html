@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <script type="application/javascript">
+
+        function showToast(){
+            var arguments = {
+                txt:"show toast"
+            }
+            NativeBridge.post("Toast",JSON.stringify(arguments))
+        }
+
+       function callBackTest(){
+            var arguments = {
+                successCallBack:"onSuccess",
+                failCallBack:"onError"
+            }
+            NativeBridge.post("callBackTest",JSON.stringify(arguments))
+        }
+
+       var onSuccess = function(message){
+            alert(message);
+            console.log(message);
+        }
+
+        var onError = function(message){
+            alert(message);
+        }
+
+    </script>
+</head>
+
+<button onclick="showToast()">弹出提示</button>
+<br>
+<button onclick="callBackTest()">回调测试</button>
+<br>
+</body>
+</html>
