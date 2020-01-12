@@ -31,7 +31,7 @@
     这边采取通信效率较高的 AIDL 的方式。通过aidl实现的跨进程的方法调用和回调
     
     代码中关于整块流程有一个详细的处理,具体如下图所示:
-    ![流程图](https://github.com/xiangwangrush/-webview/blob/master/image/t.png)
+![流程图](https://github.com/xiangwangrush/-webview/blob/master/image/t.png)
     ![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
 
     
