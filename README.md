@@ -16,18 +16,19 @@
   
 
 ###-整体设计：
-    js - native 通信： 
+    ####js - native 通信： 
     通过@JavascriptInterface 实现js - native 的通信
     Native接收的方法:  post(action,params,callback…)
     统一接口
     通过参数差异化去触发不同action对应的原生指令
     params 是一个 json 字符串,可以灵活的进行输入
-    callback(回调方法) 前端将全局的方法名称传入, webview通过 loadUrl的方式去调用回调方法，并将返回值包装成json返回给前端
-    
-    webview-bridge通信
+    callback(回调方法) 前端将全局的方法名称传入, 
+    webview通过 loadUrl的方式去调用回调方法，并将返回值包装成json返回给前端
+    ####webview-bridge通信
     由于bridge 可能会涉及到不同的业务,所以是在应用进程中实现
     这边就涉及到了跨进程通信。
     这边采取通信效率较高的 AIDL 的方式。通过aidl实现的跨进程的方法调用和回调
+
     
     
 
