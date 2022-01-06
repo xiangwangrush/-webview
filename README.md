@@ -31,7 +31,7 @@
     这边采取通信效率较高的 AIDL 的方式。通过aidl实现的跨进程的方法调用和回调
     整个前端到webview再到应用程序再按原理返回[回调]的流程如下图所示
 
-![流程图](https://github.com/xiangwangrush/-webview/blob/master/image/t.png "若加载不出来,请点击查阅")
+![流程图](/image/t.png "若加载不出来,请点击查阅")
 
     连接管理器-实现稳定的AIDL跨进程通信;
     指令管理器-实现指令的的注册,管理;
